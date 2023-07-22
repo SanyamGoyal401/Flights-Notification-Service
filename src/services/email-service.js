@@ -1,9 +1,7 @@
 const {TicketRepository} = require('../repositories');
-const { Mailer } = require('../config');
-
-
 const ticketRepository = new TicketRepository();
-async function sendEmail(mailFrom, mailTo, subject, body) {
+
+async function sendEmail(Mailer, mailFrom, mailTo, subject, body) {
     try {
         const response = await Mailer.sendMail({
             from: mailFrom,
@@ -23,7 +21,6 @@ async function createTicket(data){
     try{
         const response = await ticketRepository.create(data);
         return response;
-
     }
     catch(error){
         throw error;
@@ -34,7 +31,6 @@ async function getPendingEmails(){
     try{
         const response = await ticketRepository.getPendingTickets();
         return response;
-
     }
     catch(error){
         throw error;
