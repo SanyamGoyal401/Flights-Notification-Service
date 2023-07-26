@@ -1,4 +1,4 @@
-# Flights Notification Service
+# Flight Notification Service
 
 <h3>Introduction</h3>
 <p>
