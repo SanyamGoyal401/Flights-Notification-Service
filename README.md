@@ -37,5 +37,6 @@
 <li>Express.js</li>
 <li>MySQL</li>
 <li>Sequelize ORM</li>
+<li>Rabbit MQ</li>
 </ul>
 
